@@ -30,13 +30,49 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    .forEach:
+    - Cycles through each element in an array.
+        - Executes function on each element.
+        - Returns the result of the functions.
+
+    .map: 
+    - Creates a new array 
+        - Cycles through each element in an array.
+            - Executes the function on each.
+        - Populates the new array with the new data derived from the executed function, per element.
+
+
+
 2. What is the difference between a function and a method?
+
+    Function is a set of instructions that get executed when the function is called.  (Global scope)
+
+    Method is a function that is actually in the properties of the object. (Narrower scope)
+
 
 3. What is closure?
 
+    Closure is when a function is an inner function (defined inside of an object) that can only be accessed from within the object. But the variables can go outside of the scope and take the parameters into the function to return a result.
+
+    Effectively, the inner function can be called from outside its scope using variables.
+
 4. Describe the four rules of the 'this' keyword.
 
+    4 rules of .this :
+
+    Rules relate to how the object is bound (in scope.)
+
+    1. Window/Global Binding: Value of ‘this’ will be the window/console object.
+    2. Implicit Binding: When a function is called by a preceding dot. It can take an object as an argument and run the function by passing the argument into the function.
+    3.  New Binding: When a constructor function is called to make a new object, .this can be used to create a new object that gets returned by the constructor function.
+    4.  Explicit Binding:  Allows specific actions (identifying parameter(s)) to be taken when using .call (one parameter) and .apply (an array) with ‘this’ 
+
+
 5. Why do we need super() in an extended class?
+
+    super();
+    This is a function that binds the child object to the parent object whenever the constructor is called on a child object.(And it is from inside the object as opposed to the outside/global scope)  It needs to be set as the first element in the object.
+
 
 ## Project Set up
 
